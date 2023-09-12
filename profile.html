@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/4ee8d16374.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="S.png" class="LOGO">
+        <ul class="navbar-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">My Work/Service</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+            </ul>
+    </nav> 
+    <div class="header-text">
+        <p>FRONT-END DEVELOPER</p>
+        <h1>Hi , I am <span>Kritan</span> <br>Sharma From Nepal.</h1>
+ </div>   
+ </div>
+</div>
+<!-- ........................ABOUT SECTION................................  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="col-1">
+              <img src="RONALDO.png"> <!--  NEED TO CLICK MY PHOTO HEHE!   -->
+        </div>
+        <div class="col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                I'm Kritan Sharma, a 19-year-old front-end developer with a passion for crafting captivating online experiences. Armed with a keyboard and a creative mindset, I transform ideas into beautifully designed, user-friendly websites.
+                Join me in the journey to create web magic. Let's build something amazing together.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('qualification')">My Qualification</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web Development </span><br>Front-End Development</li>
+                    <li><span>UI / UX Design </span> <br>Figma,PhotoShop</li>
+                    <li><span>Video Editing </span><br>Adobe Premiere Pro,After Effects</li>
+                   </ul>
+              </div>
+              <div class="tab-contents" id="qualification">
+                <ul>
+                    <li><span>+2passed 2022 </span><br>Management</li>
+                    <li><span>BCA Ongoing </span><br>Bachelor In Computer Application</li>
+                    <li><span>Front-End Web Development</span><br>Self-Learning</li>
+                    <li><span>Video Editing</span><br>Self-Learned</li>
+                   </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Front-End Development</span><br> +1 yrs</li>
+                    <li><span>Video Editing</span><br>+1 yrs</li>
+                   </ul>
+              </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- ....................My Works or services ..................  -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="service-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>I'm a skilled web developer with a passion for crafting seamless and engaging online experiences. From front-end design to back-end functionality, I specialize in creating websites that not only look great but also perform flawlessly. Let's turn your ideas into a dynamic digital reality!</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-video "></i>
+        <h2>Video Editing</h2>
+        <p>I'm a talented video editor with a keen eye for detail and a creative touch. I specialize in transforming raw footage into compelling visual stories, whether it's for films, advertisements, or online content. Let's bring your vision to life through the power of video editing!</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-css3" ></i>
+        <h2>UI/UX Design</h2>
+        <p>I'm a skilled web designer who crafts visually stunning and user-friendly websites. With a focus on aesthetics and user experience, I bring digital visions to life. Let's design a web presence that captivates and engages your audience.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+</div>
+<script >
+
+        var tablinks = document.querySelectorAll(".tab-links");
+        var tabcontents = document.querySelectorAll(".tab-contents");
+
+   function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+</script>
+</body>
+</html>

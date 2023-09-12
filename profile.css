@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url();
+}
+.container{
+    padding: 10px 5%;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.LOGO{
+    width: 140px;
+    color: white;
+  justify-content: flex-start;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{ 
+    content: '';
+    background: aqua;
+    width: 0;
+    height: 3px;
+   bottom: -6px;
+    left: 0;
+    position: absolute;
+}
+nav ul li a:hover::after{
+   width: 100%;
+   transition: 0.5s;
+}
+.header-text{
+    margin-top: 15%;
+    font-size: 25px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: cadetblue;
+}
+/* ........................................ ABOUT PART ...............................................  */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1{
+    flex-basis: 30%;
+}
+.col-1 img{
+    height: 500px;
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-links::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+/* .tab-links:hover::after{
+width: 100%;
+position: absolute; */
+/* } */
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54679;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ..........................................services design starts here hehe ..............  */
+#services{
+padding: 30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;    
+    position: relative;
+}
+.service-list div i{
+    font-size: 50px;
+    /* display: flex;
+    flex-wrap: wrap;
+    margin-left: 40%;
+    margin-right: 60%; */
+    margin-bottom: 30px;
+}
+.service-list div h2{
+   font-size: 30px;
+   font-weight: 500;
+   margin-bottom: 15px;
+}
+.service-list div a{
+text-decoration: none;    
+color: #ffff;
+font-size: 12px;
+bottom: 0;
+position: absolute;
+bottom: 10px;
+}
+.service-list div p{
+    font-size: 13px;
+    text-align: justify;
+    
+}
