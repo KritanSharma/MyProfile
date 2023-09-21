@@ -141,6 +141,31 @@ position: absolute; */
 /* ..........................................services design starts here hehe ..............  */
 #services{
 padding: 30px 0;
+margin-top: 150px;
+position: relative;
+}
+
+.sub-title{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15%;
+    position: relative;
+
+}
+.sub-title::after{
+    content: '';
+    background: #ff004f;
+    width: 0;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    position: absolute;
+    transform: scale(0.30);
+}
+.sub-title:hover::after{
+    width: 100%;
+    transition: 0.1s;
+   
 }
 .service-list{
     display: grid;
@@ -153,15 +178,18 @@ padding: 30px 0;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;    
+    border-right: 10px;
+    box-shadow: black;    
     position: relative;
+    transition:0.5s;
 }
+.service-list div:hover{
+    background-image: linear-gradient(45deg , red , yellow );
+    transform: scale(1.1);
+}
+
 .service-list div i{
     font-size: 50px;
-    /* display: flex;
-    flex-wrap: wrap;
-    margin-left: 40%;
-    margin-right: 60%; */
     margin-bottom: 30px;
 }
 .service-list div h2{
@@ -179,6 +207,5 @@ bottom: 10px;
 }
 .service-list div p{
     font-size: 13px;
-    text-align: justify;
-    
+  text-align: justify;
 }
